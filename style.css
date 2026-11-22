@@ -1,0 +1,28 @@
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#1a1a1a;line-height:1.6}
+a{color:inherit;text-decoration:none}
+.nav{position:sticky;top:0;background:#1a1a1a;color:white;display:flex;align-items:center;justify-content:space-between;padding:12px 20px;z-index:50;flex-wrap:wrap;gap:10px}
+.logo{font-weight:900;font-size:20px;letter-spacing:.5px}.logo span{color:#e67e00}.logo-icon{background:#e67e00;border-radius:50%;padding:4px 8px}
+.nav nav{display:flex;gap:18px}.nav nav a{color:#e5e7eb;font-size:14px}.nav nav a:hover{color:#e67e00}
+.btn{display:inline-block;background:#e67e00;color:white;padding:11px 18px;border-radius:999px;font-weight:700;border:0;cursor:pointer;font-size:14px}
+.btn-call{background:#333}.btn-wa{background:#16a34a}.btn-outline{background:transparent;border:2px solid white}.btn-big{padding:15px 24px;font-size:16px}.btn-small{padding:9px 14px;font-size:13px;margin-top:10px}
+.menu-btn{display:none;background:#333;color:white;border:0;padding:10px 14px;border-radius:10px;font-size:18px}
+.hero{background:linear-gradient(135deg,#1a1a1a 0%,#3a2a12 60%,#e67e00 100%);color:white;padding:70px 20px}
+.hero-inner{max-width:900px;margin:0 auto}.pill{background:rgba(255,255,255,.15);padding:8px 14px;border-radius:999px;font-size:13px}
+.hero h1{font-size:52px;line-height:1.05;margin:18px 0}.hero h1 span{color:#ffb347}.hero p{font-size:18px;color:#e5e7eb;max-width:650px}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}.hero-meta{display:flex;gap:18px;flex-wrap:wrap;margin-top:22px;color:#e5e7eb;font-size:14px}
+.section{max-width:1100px;margin:0 auto;padding:50px 20px}.section h2{font-size:32px;margin:0 0 8px}.sub{color:#64748b;margin-top:0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.grid4{grid-template-columns:repeat(4,1fr)}
+.card{border:1px solid #e2e8f0;border-radius:14px;padding:20px;background:white}.card .icon{font-size:36px}.card h3{margin:10px 0 6px}.items{color:#e67e00;font-weight:700;font-size:13px}
+.dark{background:#1a1a1a;color:white;border-radius:18px}.dark .sub{color:#cbd5e1}.dark .card{background:#262626;border-color:#3a3a3a;color:white}
+.why{border:1px solid #3a3a3a;border-radius:14px;padding:18px;background:#262626}
+.project{background:#fff7ed}
+.quote-form{max-width:600px;display:flex;flex-direction:column;gap:12px}.quote-form input,.quote-form textarea{padding:14px;border-radius:12px;border:1px solid #cbd5e1;font-size:15px;width:100%}.quote-form textarea{min-height:100px}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.map-box{background:#fff7ed;border:1px solid #fed7aa;border-radius:14px;padding:20px}
+footer{background:#111;color:#cbd5e1;text-align:center;padding:28px 20px}
+#botBtn{position:fixed;bottom:20px;right:20px;background:#e67e00;color:white;border:0;padding:14px 20px;border-radius:999px;font-weight:800;cursor:pointer;z-index:99;box-shadow:0 6px 20px rgba(0,0,0,.25)}
+#botBox{display:none;position:fixed;bottom:80px;right:20px;width:340px;max-width:calc(100vw - 40px);background:white;border-radius:16px;box-shadow:0 10px 40px rgba(0,0,0,.25);overflow:hidden;z-index:99;border:1px solid #e2e8f0}
+#botBox.open{display:block}.bot-head{background:#1a1a1a;color:white;padding:14px;display:flex;justify-content:space-between;align-items:center}.bot-head span{font-size:11px;color:#cbd5e1}.bot-head button{background:none;border:0;color:white;font-size:18px;cursor:pointer}
+#botMessages{padding:12px;height:220px;overflow:auto;display:flex;flex-direction:column;gap:8px}.bot-msg{background:#f1f5f9;padding:10px 12px;border-radius:12px;font-size:14px}.user-msg{background:#e67e00;color:white;align-self:flex-end}
+.quick{display:flex;flex-wrap:wrap;gap:6px;padding:0 12px 10px}.quick button{background:#fff7ed;border:1px solid #fed7aa;padding:7px 10px;border-radius:999px;font-size:12px;cursor:pointer}
+.bot-input{display:flex;border-top:1px solid #e2e8f0}.bot-input input{flex:1;border:0;padding:12px;outline:none}.bot-input button{background:#e67e00;color:white;border:0;padding:0 16px;font-weight:700;cursor:pointer}
+@media(max-width:800px){.grid,.grid4,.contact-grid{grid-template-columns:1fr}.hero h1{font-size:36px}.nav nav{display:none}.nav nav.open{display:flex;flex-direction:column;width:100%}.menu-btn{display:block}.nav-cta{display:none}}
